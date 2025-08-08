@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignment</title>
+</head>
+<body>
+    <h1>Assignment: Enhancing HTML5 Content & Mastering Forms</h1>
+    <h2>Definition List</h2>
+    <dt>Coffe</dt>
+    <dd>-Black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>-White hot drink</dd>
+
+    <h2>Nested lists</h2>
+    <p>These are lists inside a list</p>
+    <ul>
+        <li>Fruits
+            <ol>
+                <li>Mangoes</li>
+                <li>Apples</li>
+                <li>Oranges</li>
+            </ol>
+        </li>
+        <li>Drinks
+            <ol>
+                <li>Water</li>
+                <li>Juice</li>
+                <li>Coffee</li>
+            </ol>
+        </li>
+    </ul>
+
+    <h2>Multimedia</h2>
+    <h3>Embedding images in HTML </h3>
+    <img src="https://images.pexels.com/photos/6462179/pexels-photo-6462179.jpeg" alt="display of salads" width="600" height="450">
+
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="Recording.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>Video</h3>
+    <video width="500" height="350" controls>
+        <source src="https://cdn.pixabay.com/video/2024/11/13/241218_large.mp4">
+    </video>
+    <h2>Forms</h2>
+    <table border="1">
+        <thead>Students_Records
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Admin_No</th>
+            <th>Gender</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Natalie</td>
+                <td>Pendo</td>
+                <td>001</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>Jace</td>
+                <td>Ngumbau</td>
+                <td>002</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Wendo</td>
+                <td>003</td>
+                <td>Female</td>
+            </tr>
+        </tbody>
+    </table>
+<h2>User Registration</h2>
+<form action="/submit-registration" method="post">
+    <label for="regName">Name:</label>
+    <input type="text" id="regName" name="regName" required>
+    <br><br>
+
+    <label for="regEmail">Email:</label>
+    <input type="email" id="regEmail" name="regEmail" required>
+    <br><br>
+
+    <label for="regPassword">Password:</label>
+    <input type="password" id="regPassword" name="regPassword" required>
+    <br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="genderMale" name="gender" value="Male">
+    <label for="genderMale">Male</label>
+    <input type="radio" id="genderFemale" name="gender" value="Female">
+    <label for="genderFemale">Female</label>
+    <br><br>
+
+    <label for="regCountry">Country:</label>
+    <select id="regCountry" name="regCountry">
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="australia">Australia</option>
+    </select>
+    <br><br>
+
+    <label for="regComments">Comments:</label>
+    <textarea id="regComments" name="regComments" rows="5" cols="60"></textarea>
+    <br><br>
+
+    <input type="submit" value="Register">
+</form>
+    
+    
+</body>
+</html>
